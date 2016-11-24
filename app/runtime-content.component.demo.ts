@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
     template: `
         <div>
             <h2>Runtime content</h2>
+            <runtime-content></runtime-content>
         </div>
     `
 })
