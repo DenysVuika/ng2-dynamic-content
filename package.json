@@ -1,0 +1,49 @@
+{
+  "name": "ng2samples-blank",
+  "version": "0.2.0",
+  "description": "Blank Angular 2 project template",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && concurrently \"tsc -w\" \"npm run serve\" ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "wsrv -s -o -l",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenisVuyka/ng2samples-blank.git"
+  },
+  "keywords": [
+    "angular2",
+    "template"
+  ],
+  "author": "Denys Vuika <denys.vuika@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DenisVuyka/ng2samples-blank/issues"
+  },
+  "homepage": "https://github.com/DenisVuyka/ng2samples-blank#readme",
+  "dependencies": {
+    "@angular/common": "~2.2.0",
+    "@angular/compiler": "~2.2.0",
+    "@angular/core": "~2.2.0",
+    "@angular/forms": "~2.2.0",
+    "@angular/http": "~2.2.0",
+    "@angular/platform-browser": "~2.2.0",
+    "@angular/platform-browser-dynamic": "~2.2.0",
+    "@angular/router": "~3.2.0",
+
+    "systemjs": "0.19.40",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "zone.js": "^0.6.26"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.46",
+    "concurrently": "^3.1.0",
+    "typescript": "^2.0.10",
+    "wsrv": "^0.1.6"
+  }
+}
