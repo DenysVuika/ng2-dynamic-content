@@ -21,7 +21,7 @@ export class DynamicContentComponent implements OnInit, OnDestroy {
     type: string;
 
     @Input()
-    context: string;
+    context: any;
 
     private mappings = {
         'sample1': DynamicSample1Component,
@@ -63,23 +63,23 @@ export class DynamicContentComponent implements OnInit, OnDestroy {
 }
 
 export abstract class DynamicComponent {
-    context: string;
+    context: any;
 }
 
 @Component({
     selector: 'dynamic-sample-1',
-    template: `<div>Dynamic sample 1 ({{context}})</div>`
+    template: `<div>Dynamic sample 1 ({{context?.text}})</div>`
 })
 export class DynamicSample1Component extends DynamicComponent {}
 
 @Component({
     selector: 'dynamic-sample-2',
-    template: `<div>Dynamic sample 2 ({{context}})</div>`
+    template: `<div>Dynamic sample 2 ({{context?.text}})</div>`
 })
 export class DynamicSample2Component extends DynamicComponent {}
 
 @Component({
     selector: 'unknown-component',
-    template: `<div>Unknown component ({{context}})</div>`
+    template: `<div>Unknown component ({{context?.text}})</div>`
 })
 export class UnknownDynamicComponent extends DynamicComponent {}
