@@ -1,10 +1,10 @@
-# Dynamic Content with Angular 2 (examples)
+# Dynamic Content with Angular (examples)
 
 Contains examples project for the article [Dynamic Content with Angualar 2]()
 
 ## Prerequisites
 
-Node.js and npm are essential to Angular 2 development. 
+Node.js and npm are essential to Angular development. 
 
 <a href="https://docs.npmjs.com/getting-started/installing-node" target="_blank" title="Installing Node.js and updating npm">
 Get it now</a> if it's not already installed on your machine.
