@@ -4,8 +4,8 @@ import { Component, Input, ContentChild, TemplateRef } from '@angular/core';
     selector: 'tlist',
     template: `
         <ul>
-            <template ngFor [ngForOf]="items" [ngForTemplate]="template">
-            </template>
+            <ng-template ngFor [ngForOf]="items" [ngForTemplate]="template">
+            </ng-template>
         </ul>
     `
 })
