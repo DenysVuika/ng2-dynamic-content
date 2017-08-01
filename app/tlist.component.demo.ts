@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
         <div>
             <h2>Templated list</h2>
             <tlist [items]="items">
-                <template let-item="$implicit" let-i="index">
+                <ng-template let-item="$implicit" let-i="index">
                     <li>[{{i}}] Hello: {{item.title}}</li>
-                </template>
+                </ng-template>
             </tlist>
         </div>
     `
